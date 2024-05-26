@@ -4,12 +4,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Product p1 = new BottleOfWater("Appleish", 1, 10);
-        Product p2 = new BottleOfWater("Cola", 1.5, 10);
-        Product p3 = new BottleOfWater("Coca", 0.3, 10);
-        Product p4 = new BottleOfWater("Caca", 2.25, 10);
-        List<BottleOfWater> pList1 = new ArrayList<BottleOfWater>();
-        VendingMachine vMachine = new BottleOfWaterVendingMachine(Arrays.<BottleOfWater>asList((BottleOfWater)p1, (BottleOfWater)p2, (BottleOfWater)p3, (BottleOfWater)p4));
+        Product p1 = new HotDrink("Choko", 1, 60, 30);
+        Product p2 = new HotDrink("Moko", 1.5, 40, 30);
+        Product p3 = new HotDrink("Moca", 0.3, 70, 50);
+        Product p4 = new HotDrink("Chaca", 2.25, 55, 50);
+        List<HotDrink> hList1 = new ArrayList<HotDrink>();
+        HotDrinkVendingMachine hdMachine = new HotDrinkVendingMachine(Arrays.<HotDrink>asList((HotDrink)p1, (HotDrink)p2, (HotDrink)p3, (HotDrink)p4));
         System.out.println(p1);
     }
 }
